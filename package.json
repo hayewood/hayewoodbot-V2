@@ -2,13 +2,17 @@
   "name": "hayewoodbotv2",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "root.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./root.js --harmony-nullish --harmony-optional-chaining"
+  },
+  "engines": {
+    "node": ">= 13.2"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bot-core": "file:./custom_modules/bot-core",
     "dank-twitch-irc": "^3.0.7",
     "dotenv": "^8.2.0"
   }
